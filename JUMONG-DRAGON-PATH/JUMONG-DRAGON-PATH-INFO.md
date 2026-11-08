@@ -1,4 +1,4 @@
-# 🐉 JUMONG: DRAGON PATH
+#🐉 JUMONG: DRAGON PATH
 
 جومونگ: مسیر اژدها
 
