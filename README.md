@@ -1,40 +1,41 @@
 # 🌐 HTML Projects
 
-مجموعه‌ای از تجربه‌ها، ایده‌ها و دستاوردهای من در توسعه وب
+A collection of my experiences, ideas, and work in web development.
 
 ---
 
-✦ درباره مخزن
+## ✦ About This Repository
 
-"HTML-Projects" فضای اختصاصی من برای توسعه، آزمایش و نگهداری پروژه‌های مبتنی بر فناوری‌های وب است.
+`HTML-Projects` is my dedicated space for developing, experimenting with, and maintaining projects built with web technologies.
 
-این مخزن با هدف تبدیل ایده‌ها به محصولات تعاملی، تقویت مهارت‌های فنی و تجربه روش‌های مختلف توسعه نرم‌افزار ایجاد شده است.
+This repository was created to turn ideas into interactive products, strengthen technical skills, and explore different software development approaches.
 
-⚙️ فناوری‌های اصلی
+## ⚙️ Core Technologies
 
-فناوری| کاربرد
-HTML5| ساختار و معماری صفحات
-CSS3| طراحی و جلوه‌های بصری
-JavaScript| منطق و تعاملات پویا
+| Technology | Purpose |
+|---|---|
+| HTML5 | Page structure and architecture |
+| CSS3 | Styling and visual effects |
+| JavaScript | Logic and dynamic interactions |
 
-🚀 اهداف توسعه
+## 🚀 Development Goals
 
-- پیاده‌سازی ایده‌های خلاقانه
-- ساخت تجربه‌های تعاملی و کاربردی
-- بهبود طراحی رابط کاربری (UI)
-- ارتقای کیفیت و ساختار کدنویسی
-- آزمایش قابلیت‌های جدید مرورگرها
-- مستندسازی و توسعه مستمر پروژه‌ها
+- Implement creative ideas
+- Build practical and interactive experiences
+- Improve user interface (UI) design
+- Improve code quality and structure
+- Experiment with new browser capabilities
+- Document and continuously develop projects
 
-🧠 ابزارهای توسعه
+## 🧠 Development Tools
 
-در فرایند توسعه، از ابزارهای مختلف برنامه‌نویسی و هوش مصنوعی به‌عنوان دستیار استفاده می‌کنم. استفاده از این ابزارها بخشی از روند تحقیق، ایده‌پردازی و بهبود کد است.
+During development, I use various programming tools and AI as an assistant. These tools are part of my research, ideation, and code-improvement workflow.
 
-👨‍💻 Developer
+## 👨‍💻 Developer
 
 Taha Hassarki
 
-"GitHub Profile" (https://github.com/tahahesaraki2-hue)
+[GitHub Profile](https://github.com/TahaDev24)
 
 ---
 
