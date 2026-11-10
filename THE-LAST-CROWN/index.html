@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#11150f">
+<meta name="description" content="THE LAST CROWN — RISE OF EMPIRES | Offline 4X Strategy">
+<title>THE LAST CROWN — RISE OF EMPIRES</title>
+<link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+<body>
+<div id="app">
+<div id="capitalArt"></div>
+<div id="intro">
+ <div id="introArt"></div><div class="introDust" id="introDust"></div>
+ <div class="introCrown">♛</div><h1 class="introTitle">THE LAST CROWN</h1><div class="introSub">RISE OF EMPIRES</div>
+ <p class="introStory">تاج شکسته است؛ اما میراث هنوز زنده است. از دل خاکستر برخیز، سرزمین‌های فراموش‌شده را متحد کن و تاریخ را از نو بنویس.</p>
+ <div class="introLine"><span></span></div>
+ <div class="introControls"><button class="introButton" id="enterIntro">ورود به جهان تاج آخر</button><button class="skipButton" id="skipIntro">رد کردن مقدمه</button></div>
+</div>
+<div id="menu">
+ <div class="menuInner">
+  <div class="menuKicker">A KINGDOM REMEMBERED</div>
+  <div class="menuTitle">THE LAST<br>CROWN<small>RISE OF EMPIRES</small></div>
+  <div class="menuRule"></div>
+  <p class="menuDesc">امپراتوری از یک تصمیم آغاز می‌شود. قلمرو خود را بساز، اقتصاد را سامان بده، با دودمان‌ها پیمان ببند یا برای تاج نهایی بجنگ.</p>
+  <div class="menuButtons">
+   <button class="menuBtn primary" id="newGame">آغاز امپراتوری تازه</button>
+   <button class="menuBtn" id="continueGame">ادامه فرمانروایی</button>
+   <button class="menuBtn" id="chooseRealm">انتخاب دودمان</button>
+   <button class="menuBtn" id="menuSettings">تنظیمات</button>
+   <button class="menuBtn" id="menuGuide">راهنمای بازی</button>
+   <button class="menuBtn" id="about">درباره بازی</button>
+  </div>
+  <div class="menuFoot">OFFLINE 4X STRATEGY · THE ROYAL CHRONICLE · BY TAHA HESARAKI</div>
+ </div>
+</div>
+<div id="game">
+ <canvas id="worldCanvas"></canvas>
+ <div class="topbar">
+  <div class="houseMark"><div class="houseSigil" id="houseSigil">♛</div><div class="houseMeta"><strong id="houseName">دودمان خاکستر</strong><small id="houseLatin">HOUSE OF ASHEN</small></div></div>
+  <div class="resources" id="resourceBar"></div>
+  <div class="topSpacer"></div>
+  <div class="turnInfo" id="turnInfo">فصل ۱ · بهار</div>
+  <button class="topAction subtle" id="saveButton">ذخیره</button>
+  <button class="topAction" id="endTurn">پایان فصل ◂</button>
+ </div>
+ <div id="stageTitle"><div class="stageEyebrow">THE ROYAL CHRONICLE</div><div class="stageHeading" id="stageHeading">پایتخت تاج‌شکسته</div><div class="stageSub" id="stageSub">قلب فرمانروایی شما</div></div>
+ <div id="worldLegend"><strong>نقشه سرزمین‌های کهن</strong>برای حرکت، نقشه را بکشید؛ برای جزئیات، یک منطقه را انتخاب کنید.<br>خط طلایی: قلمرو شما · پرچم سرخ: دودمان رقیب</div>
+ <div id="mapControls"><button class="mapControl" id="zoomIn" aria-label="بزرگ‌نمایی">+</button><button class="mapControl" id="zoomOut" aria-label="کوچک‌نمایی">−</button><button class="mapControl" id="mapCenter" aria-label="مرکز نقشه">⌖</button></div>
+ <div id="eventTicker">باد از فراز برج‌های کهن می‌وزد...</div>
+ <div id="panel"><div class="panelHead"><div><h2 id="panelTitle">قلمرو سلطنتی</h2><small id="panelEyebrow">THE ROYAL COUNCIL</small></div><button class="panelClose" id="closePanel">بستن ✕</button></div><div class="panelBody" id="panelBody"></div></div>
+ <div class="bottomNav" id="bottomNav">
+  <button class="navBtn active" data-tab="realm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V9l9-6 9 6v12H3Z"/><path d="M8 21v-7h8v7M7 10h2m6 0h2M12 3v4"/></svg>پایتخت</button>
+  <button class="navBtn" data-tab="world"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18M5 6l4 2 2-3M15 16l4 2"/></svg>جهان</button>
+  <button class="navBtn" data-tab="build"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6M3 9h18M8 11h.01M16 11h.01"/><path d="M11 4V2h2v2"/></svg>ساخت‌وساز</button>
+  <button class="navBtn" data-tab="army"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 20 5v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3Z"/><path d="m12 6 1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5L12 6Z"/></svg>ارتش</button>
+  <button class="navBtn" data-tab="council"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M6 20v-8l6-4 6 4v8M3 8l9-5 9 5M9 14h6M12 8v12"/></svg>شورا</button>
+  <button class="navBtn" data-tab="research"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/><path d="M8 2v3M16 2v3"/></svg>دانش</button>
+ </div>
+</div>
+<div id="battleScreen">
+ <canvas id="battleCanvas"></canvas>
+ <button class="battleClose" id="battleClose">بازگشت به جهان</button>
+ <div class="battleHUD"><div class="battleSide"><strong id="battlePlayerName">امپراتوری شما</strong><small id="battlePlayerPower">قدرت ۰</small></div><div class="battleTitle" id="battleTitle">گذرگاه خاکستر · میدان نبرد</div><div class="battleSide"><strong id="battleEnemyName">دودمان رقیب</strong><small id="battleEnemyPower">قدرت ۰</small></div></div>
+ <div class="battlePanel" id="battlePanel"><h2 id="battlePanelTitle">آرایش سپاه</h2><p id="battleText">پیش از آغاز نبرد، شیوه فرماندهی خود را انتخاب کنید. نتیجه بر اساس ترکیب ارتش، فناوری و زمین محاسبه می‌شود.</p><div class="tactics" id="tactics"><button class="tactic active" data-tactic="balanced">آرایش متوازن</button><button class="tactic" data-tactic="guarded">پایداری دفاعی</button><button class="tactic" data-tactic="swift">پیشروی سریع</button><button class="tactic" data-tactic="volley">باران تیر</button><button class="tactic" data-tactic="charge">یورش سواره</button><button class="tactic" data-tactic="siege">مهندسی محاصره</button></div><div class="battleActions"><button class="action" id="battleStart">آغاز نبرد</button><button class="action alt" id="battleCancel">بازگشت</button></div></div>
+</div>
+<div id="modalShade"><div id="modal"><div class="modalHead"><h2 id="modalTitle">عنوان</h2><button class="panelClose" id="modalX">✕</button></div><div class="modalContent" id="modalContent"></div><div class="modalFooter" id="modalFooter"></div></div></div>
+<div id="toast"></div>
+<audio id="music" preload="none" loop></audio>
+</div>
+<script src="js/audio-data.js" defer></script>
+<script src="js/assets.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
