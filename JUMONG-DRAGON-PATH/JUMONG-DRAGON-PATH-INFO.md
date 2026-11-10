@@ -1,101 +1,102 @@
 🐉 JUMONG: DRAGON PATH
 
-جومونگ: مسیر اژدها
+JUMONG: DRAGON PATH is a 2D browser-based action-adventure game inspired by the historical and mythological atmosphere of East Asia. Playing as Jumong, the player begins a three-chapter journey through different regions, fighting enemies on the way to the Dark Castle to defeat the General of Darkness.
 
-JUMONG: DRAGON PATH یک بازی اکشن و ماجراجویی دوبعدی تحت وب است که با الهام از فضای تاریخی و افسانه‌ای شرق آسیا طراحی شده است. بازیکن در نقش جومونگ وارد سفری سه‌فصلی می‌شود تا با عبور از مناطق مختلف و شکست دشمنان، به قلعه تاریکی برسد و ژنرال تاریکی را شکست دهد.
+🎮 Game Features
 
-🎮 ویژگی‌های بازی
+- Three story chapters: Abandoned Village, Bamboo Forest, and Dark Castle
+- Dedicated main character: custom Jumong character design with movement animations
+- Various enemies: soldiers, archers, guards, and a final boss
+- Combat system: attack, defend, dodge, and different abilities
+- Health and energy systems: manage health and energy throughout the game
+- Score and combo system: track scores and successful attack chains
+- Final boss battle: features two different behavioral phases
+- Record system: saves the player's highest score
+- Secret code `DRAGONSLAYER`: activates a special dragon power for 30 seconds
+- Pause and resume system: pause, restart, and return to the menu
 
-- سه فصل داستانی: دهکده متروک، جنگل خیزران و قلعه تاریکی
-- شخصیت اصلی اختصاصی: طراحی کاراکتر جومونگ با انیمیشن‌های حرکتی
-- دشمنان متنوع: سربازان، کمانداران، نگهبانان و رئیس نهایی
-- سیستم مبارزه: شامل حمله، دفاع، جاخالی و قابلیت‌های مختلف
-- سیستم سلامتی و انرژی: مدیریت جان و انرژی در طول بازی
-- سیستم امتیاز و کمبو: ثبت امتیاز و زنجیره حملات موفق
-- نبرد با رئیس نهایی: دارای دو فاز رفتاری متفاوت
-- سیستم رکورد: ذخیره بالاترین امتیاز بازیکن
-- رمز مخفی DRAGONSLAYER: فعال‌سازی قدرت ویژه اژدها برای ۳۰ ثانیه
-- سیستم توقف و ادامه بازی: امکان مکث، شروع مجدد و بازگشت به منو
+🎨 Design and Graphics
 
-🎨 طراحی و گرافیک
+The game environment is built using HTML Canvas and custom graphics.
 
-محیط بازی با استفاده از HTML Canvas و طراحی گرافیکی اختصاصی ساخته شده است.
+Visual features:
 
-ویژگی‌های بصری:
+- Custom designs for the main character and enemies
+- Different animations for character movement and interactions
+- Lighting, particle, and collision effects
+- Multi-layer animated backgrounds
+- Camera movement and impact-shake effects
+- User interface designed with a dark and gold theme
 
-- طراحی اختصاصی شخصیت اصلی و دشمنان
-- انیمیشن‌های مختلف برای حرکت و تعامل شخصیت‌ها
-- افکت‌های نور، ذرات و برخورد
-- پس‌زمینه‌های متحرک و چندلایه
-- افکت حرکت دوربین و لرزش هنگام برخورد
-- طراحی رابط کاربری با تم طلایی و تیره
+🔊 Audio System
 
-🔊 سیستم صوتی
+The game's audio system is implemented using the Web Audio API.
 
-سیستم صوتی بازی با استفاده از Web Audio API پیاده‌سازی شده است.
+- Programmatically generated ambient sounds and game effects
+- Sound effects for different events
+- Background music generated with audio oscillators
+- Independent controls for enabling or disabling sound and music
 
-- تولید صداهای محیطی و افکت‌های بازی به‌صورت برنامه‌نویسی‌شده
-- افکت‌های صوتی برای رویدادهای مختلف
-- موسیقی پس‌زمینه تولیدشده با نوسان‌سازهای صوتی
-- کنترل مستقل روشن و خاموش کردن صدا و موسیقی
+📱 Controls and Compatibility
 
-📱 کنترل و سازگاری
+The game is designed for both mobile devices and computers.
 
-بازی برای استفاده در موبایل و رایانه طراحی شده است.
+Mobile controls:
 
-کنترل موبایل:
+- Touch joystick for movement
+- Swipe upward to jump
+- Quick downward swipe to dodge
+- Dedicated buttons for game actions
 
-- جوی‌استیک لمسی برای حرکت
-- حرکت انگشت به بالا برای پرش
-- حرکت سریع به پایین برای جاخالی
-- دکمه‌های اختصاصی برای عملکردهای بازی
+Computer controls:
 
-کنترل رایانه:
+- Arrow keys or A and D to move
+- Space or W to jump
+- J to attack
+- K to dodge
+- L to defend
+- I to use the bow
 
-- کلیدهای جهت‌دار یا A و D برای حرکت
-- Space یا W برای پرش
-- J برای حمله
-- K برای جاخالی
-- L برای دفاع
-- I برای استفاده از کمان
+💾 Data Storage
 
-💾 ذخیره‌سازی اطلاعات
+Selected game data is stored using the browser's LocalStorage:
 
-اطلاعات منتخب بازی با استفاده از LocalStorage مرورگر ذخیره می‌شوند:
+- Highest score
+- Game sound setting
+- Music setting
 
-- بالاترین امتیاز
-- وضعیت صدای بازی
-- وضعیت موسیقی
+Stored data remains in the same browser and on the same device.
 
-اطلاعات ذخیره‌شده روی همان مرورگر و دستگاه باقی می‌مانند.
+🛠️ Technologies Used
 
-🛠️ فناوری‌های استفاده‌شده
+| Technology | Purpose |
+|---|---|
+| HTML5 | Main game structure |
+| CSS3 | User interface design and animations |
+| JavaScript | Game logic and systems |
+| Canvas API | Environment and character rendering |
+| Web Audio API | Sound and music generation |
+| LocalStorage | Player data storage |
+| Pointer Events | Touch-control handling |
 
-فناوری| کاربرد
-HTML5| ساختار اصلی بازی
-CSS3| طراحی رابط کاربری و انیمیشن‌ها
-JavaScript| منطق و سیستم‌های بازی
-Canvas API| رندر محیط و شخصیت‌ها
-Web Audio API| تولید صدا و موسیقی
-LocalStorage| ذخیره اطلاعات بازیکن
-Pointer Events| مدیریت کنترل‌های لمسی
+🚀 Running the Game
 
-🚀 اجرا
+The game is built as a standalone HTML file.
 
-بازی به‌صورت یک فایل مستقل HTML ساخته شده است.
+To run it, open `index.html` in a modern browser.
 
-برای اجرا کافی است فایل "index.html" را با یک مرورگر مدرن باز کنید.
+This version is designed to run offline and does not require a dedicated server or external libraries.
 
-این نسخه برای اجرای آفلاین طراحی شده و به سرور اختصاصی یا نصب کتابخانه خارجی نیاز ندارد.
+📂 Project Structure
 
-📂 ساختار پروژه
-
+```text
 JUMONG-DRAGON-PATH/
 │
 ├── index.html
 └── JUMONG-DRAGON-PATH-INFO.md
+```
 
-📌 اطلاعات پروژه
+📌 Project Information
 
 - Project: JUMONG: DRAGON PATH
 - Version: V3.0
