@@ -1,47 +1,48 @@
-# 👑 THE LAST CROWN — تاج آخر
+# 👑 THE LAST CROWN
 
 BATTLE EDITION
 
-THE LAST CROWN یک بازی تحت وب با محوریت فضای پادشاهی، نبرد و تجربه‌ای حماسی است که با استفاده از HTML، CSS و JavaScript توسعه داده شده است.
+THE LAST CROWN is a browser-based game centered on a royal setting, battles, and an epic experience, developed using HTML, CSS, and JavaScript.
 
-این پروژه با هدف ارائه تجربه‌ای جذاب و متفاوت در قالب یک بازی مستقل مرورگری طراحی شده و تلاش می‌کند ترکیبی از طراحی بصری، تعاملات بازی، جلوه‌های سینمایی و موسیقی حماسی را در یک فایل واحد ارائه دهد.
+The project was designed to deliver an engaging and distinctive standalone browser-game experience, combining visual design, gameplay interactions, cinematic effects, and epic music in a single file.
 
-✨ ویژگی‌های اصلی
+✨ Main Features
 
-- صفحه خوشامدگویی سینمایی: نمایش یک مراسم ورود سلطنتی همراه با انیمیشن اختصاصی در اولین اجرای بازی.
-- جلوه‌های بصری: استفاده از عناصر گرافیکی، نورپردازی و افکت‌های متحرک برای ایجاد فضای حماسی.
-- موسیقی پس‌زمینه: استفاده از موسیقی حماسی جاسازی‌شده در فایل HTML.
-- سیستم تشخیص اولین ورود: نمایش انیمیشن خوشامدگویی فقط در اولین ورود و عبور مستقیم به منوی بازی در مراجعات بعدی.
-- کنترل موسیقی: امکان روشن و خاموش کردن موسیقی از داخل رابط بازی.
-- اجرای مستقل: قرار گرفتن کدهای HTML، CSS و JavaScript و فایل صوتی در یک سند HTML.
-- قابلیت اجرای آفلاین: عدم نیاز به دریافت فایل صوتی جداگانه؛ البته قابلیت‌های وابسته به مرورگر و ذخیره‌سازی محلی ممکن است محدودیت‌هایی داشته باشند.
+- Cinematic welcome screen: displays a royal entrance ceremony with a dedicated animation on the first launch.
+- Visual effects: uses graphical elements, lighting, and animated effects to create an epic atmosphere.
+- Background music: includes epic music embedded in the HTML file.
+- First-visit detection: displays the welcome animation only on the first visit and goes directly to the game menu on later visits.
+- Music controls: allows music to be enabled or disabled from inside the game interface.
+- Standalone execution: HTML, CSS, JavaScript, and the audio file are contained in a single HTML document.
+- Offline capability: no separate audio download is required; however, browser-dependent features and local storage may have limitations.
 
-🛠️ فناوری‌های استفاده‌شده
+🛠️ Technologies Used
 
-فناوری| کاربرد
-HTML5| ساختار اصلی بازی
-CSS3| طراحی رابط کاربری و انیمیشن‌ها
-JavaScript| منطق و تعاملات بازی
-Local Storage| ذخیره وضعیت اولین ورود
-Embedded Audio| جاسازی موسیقی در فایل HTML
+| Technology | Purpose |
+|---|---|
+| HTML5 | Main game structure |
+| CSS3 | User interface design and animations |
+| JavaScript | Game logic and interactions |
+| Local Storage | Stores first-visit status |
+| Embedded Audio | Music embedded in the HTML file |
 
-🚀 نحوه اجرا
+🚀 How to Run
 
-1. فایل HTML را دریافت کنید.
-2. آن را با مرورگر به‌روز مانند Google Chrome باز کنید.
-3. در اولین ورود، صفحه خوشامدگویی نمایش داده می‌شود.
-4. روی دکمه ورود کلیک کنید تا تجربه بازی آغاز شود.
+1. Get the HTML file.
+2. Open it with an up-to-date browser such as Google Chrome.
+3. On the first visit, the welcome screen is displayed.
+4. Click the entrance button to begin the game experience.
 
-📦 ساختار انتشار
+📦 Release Structure
 
-نسخه فعلی پروژه در قالب یک فایل HTML مستقل ارائه شده است. به همین دلیل برای اجرای نسخه اصلی نیازی به نصب وابستگی‌های نرم‌افزاری یا راه‌اندازی سرور اختصاصی نیست.
+The current version is provided as a standalone HTML file. Therefore, running the main version does not require installing software dependencies or setting up a dedicated server.
 
-🎯 هدف پروژه
+🎯 Project Goal
 
-ساخت تجربه‌ای متفاوت از یک بازی مرورگری با هویت بصری سلطنتی، فضای حماسی و رابط کاربری تعاملی.
+To create a distinctive browser-game experience with a royal visual identity, an epic atmosphere, and an interactive user interface.
 
 
-توسعه با کمک هوش مصنوعی: این پروژه با کمک ابزارهای هوش مصنوعی توسعه داده شده است. ایده، مسیر خلاقانه، برنامه‌ریزی قابلیت‌ها و تصمیم‌گیری‌های پروژه توسط توسعه‌دهنده هدایت شده‌اند.
+AI-assisted development: This project was developed with the assistance of AI tools. The idea, creative direction, feature planning, and project decisions were guided by the developer.
 
 
 ---
